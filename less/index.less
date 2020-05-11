@@ -6,6 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap');
 @heading-font: 'Anton', sans-serif;
 @main-text: 'Noto Sans', sans-serif;
+@background: #424242;
+@text-color: white;
+@blue: dodgerblue;
+.button(){
+	padding: 20px;
+	width: 8%;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,11 +77,11 @@ html, body {
 // General Styling
 h1, h2, h3, h4, h5, h6{
 	font-family: @heading-font;
-	font-size: 2.4rem
+	letter-spacing: 2px;
 }
 
 p{
-	font-size: 2rem;
+	font-size: 1.6rem;
 	font-family: @main-text;
 }
 
@@ -79,6 +89,63 @@ p{
 	max-width: 100%;
 	font-size: 1.6rem;
 
+	.header {
+		background-color: @background;
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		nav {
+			width: 50%;
+			display: flex;
+			justify-content: space-around;
+
+			a {
+				text-decoration: none;
+				color: @text-color;
+				font-size: 2rem;
+				font-family: @heading-font;
+				padding: 1%;
+
+				&:hover {
+					color: @blue;
+					background: #7c7c7c;
+				}
+			}
+		} // nav closing bracket
+
+		#social {
+			width: 30%;
+			display: flex;
+			flex-direction: flex-end;
+			justify-content: space-between;
+			align-items: center;
+			// padding: 0 2%;
+
+			h2 {
+				color: @text-color;
+				font-size: 3.2rem;
+				padding: 0 2%;
+			} // h2 closing bracket
+
+			a {
+				color: @text-color;
+				.button();
+				font-size: 1.8rem;
+			}
+
+			.fa-facebook {
+				background: #3B5998;
+			}
+
+			.fa-twitter {
+				background: #45bbff;
+			}
+		} // #social closing bracket
+
+		
+	} // .header closing bracket
 	
 
 } // closes container
