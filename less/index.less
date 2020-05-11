@@ -3,6 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap');
+@heading-font: 'Anton', sans-serif;
+@main-text: 'Noto Sans', sans-serif;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,6 +26,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	border: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -58,15 +62,12 @@ table {
 
 html, body {
 	height: 100%;
-	@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap');
-	@heading: 'Anton', sans-serif;
-	@main-text: 'Noto Sans', sans-serif;
 }
 
 // General Styling
 h1, h2, h3, h4, h5, h6{
-	font-family: @heading;
-	font-size: 4rem
+	font-family: @heading-font;
+	font-size: 2.4rem
 }
 
 p{
