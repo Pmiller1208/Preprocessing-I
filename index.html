@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +14,73 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <section class="header">
+      <h2>Patrick Miller</h2>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Professional History</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </section>
+    <section id="home">
+        <div class="left">
+            <h1>Welcome to my Resume</h1>
+            <p>learn about me</p>
+            <p>I'm thrilled to invite you to explore my work, skills and professional experience, as well as get to know a bit more about me. A born go-getter. I give 100% to every new project I take on. It's my firm belief that a good challenge is a great way to develop and improve, which is why I make a point of seeking out challenges in the professional realm as well as in my personla life. Take a moment to look around, and contact me directly to learn more.</p>
+        </div>
+        <div class="right">
+            <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Code">
+        </div>
+    </section>
+    <section id="about">
+        <div class='text-container'>
+            <h3>about patrick miller</h3>
+            <p>Living in San Francisco, Patrick Miller has always wanted to work industry that he would enjoy working in. He went to Full Sail University to learn the art of film making and learn from industry professionals to gain the skills he needed to be thrive in the industry. He was introduced into the creative industry while taking a photography class. 
+          Now, he's looking for new challenges and hope to venture even further down his new added carrer path, Web Development. Find out more about Patrick Miller by getting in touch.</p>
+        </div>
+    </section>
+    <section id="experience">
+        <div>
+            <h3>Professional History</h3>
+        </div>
+        <div class='text-container'>
+            <h4>C.P.S. - Line Producer</h4>
+            <p>June 14, 2016 - June 18, 2016</p>
+            <p>It was my responsibility to help the Director who was also the Producer in making plans for catering as well as make sure everything went smoothly on set.</p>
+        </div>
+        <div class='text-container'>
+            <h4>Genon Murray Workshop - Camera Operator</h4>
+            <p>July 7, 2016</p>
+            <p>As one of the Camera Operators for this workshop, it was my responsibility to set up the cameras and making sure the they had the proper k settings uploaded before filming. I was also in charge charge of making sure that the talent on camera had enough head room, they were in focus, and centered in frame.</p>
+        </div>
+        <div class='text-container'>
+            <h4>Off the Record - 2nd A.C.</h4>
+            <p>August 8, 2016 - August 11, 2016</p>
+            <p>As the 2nd A.C., it was my responsibility to make sure the slate is in front of the camera as soon as the camera is recording, make sure the extra batteries are charging, and making sure the camera reports are filled out correctly and in order. If the Director of Photography wanted a lens change, then I would go and get the right lens.</p>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h4>My Projects</h4>
+        <p>Here are some of the projects that I ahve made currently.</p>
+    </section>
+    <section id="quote">
+        <p>"If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success"</p>
+        <p>James Cameron</p>
+    </section>
+    <section id="contact">
+        <form action="/action_page.php">
+            <label for="name">Name</label><br>
+            <input type="text" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="text" id="email"><br>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject"><br>
+            <label for="message">Message</label><br>
+            <input type="text" id="message"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+  </div>
 </body>
 </html>

@@ -50,10 +50,37 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
+
+
 html, body {
-    height: 100%;
+	height: 100%;
+	@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap');
+	@heading: 'Anton', sans-serif;
+	@main-text: 'Noto Sans', sans-serif;
 }
+
+// General Styling
+h1, h2, h3, h4, h5, h6{
+	font-family: @heading;
+	font-size: 4rem
+}
+
+p{
+	font-size: 2rem;
+	font-family: @main-text;
+}
+
+.container {
+	max-width: 100%;
+	font-size: 1.6rem;
+
+	
+
+} // closes container
+
+
 
