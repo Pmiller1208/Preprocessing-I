@@ -162,6 +162,7 @@ h6 {
 p {
   font-size: 1.6rem;
   font-family: 'Noto Sans', sans-serif;
+  line-height: 1.6;
 }
 .container {
   max-width: 100%;
@@ -216,4 +217,58 @@ p {
 }
 .container .header #social .fa-twitter {
   background: #45bbff;
+}
+.container #home {
+  display: flex;
+}
+.container #home .left {
+  width: 50%;
+}
+.container #home .left .text-container {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.container #home .left .text-container h1 {
+  color: #424242;
+  font-size: 5.2rem;
+  padding: 5% 0;
+}
+.container #home .left .text-container p {
+  font-size: 2.4rem;
+  padding: 4% 0;
+}
+.container #home .left .text-container #homeText {
+  text-transform: capitalize;
+  color: #424242;
+  font-weight: bold;
+}
+.container #home .right {
+  width: 50%;
+}
+.container #home .right img {
+  width: 100%;
+  height: 100%;
+}
+.container #about {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container #about .text-container .littleBox {
+  padding: 5%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container #about .text-container .littleBox h3 {
+  color: #424242;
+  text-transform: capitalize;
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 4% 0;
+}
+.container #about .text-container .littleBox p {
+  font-size: 2.4rem;
 }
