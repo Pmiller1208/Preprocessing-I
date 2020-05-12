@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,131 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <section class="header">
+        <div id="social">
+          <h2>Patrick Miller</h2>
+          <a href="http://www.facebook.com" class="fa fa-facebook" class="button" target="_blank"></a>
+          <a href="http://www.twitter.com" class="fa fa-twitter" clas="button" target="_blank"></a>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Professional History</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+      </nav>
+    </section>
+    <section id="home">
+        <div class="left">
+          <div class='text-container'>
+            <h1>Welcome to my Resume</h1>
+            <p id="homeText">learn about me</p>
+            <p>I'm thrilled to invite you to explore my work, skills and professional experience, as well as get to know a bit more about me. A born go-getter. I give 100% to every new project I take on. It's my firm belief that a good challenge is a great way to develop and improve, which is why I make a point of seeking out challenges in the professional realm as well as in my personla life. Take a moment to look around, and contact me directly to learn more.</p>
+          </div>
+        </div>
+        <div class="right">
+            <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Code">
+        </div>
+    </section>
+    <section id="about">
+        <div class='text-container'>
+            <div class="littleBox">
+                <h3>about patrick miller</h3>
+                <p>Living in San Francisco, Patrick Miller has always wanted to work industry that he would enjoy working in. He went to Full Sail University to learn the art of film making and learn from industry professionals to gain the skills he needed to be thrive in the industry. He was introduced into the creative industry while taking a photography class. 
+                  Now, he's looking for new challenges and hope to venture even further down his new added carrer path, Web Development. Find out more about Patrick Miller by getting in touch.</p>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <div class="exp-image">
+            <h3>Professional History</h3>
+        </div>
+        <div class='text-container'>
+            <div class='littleBox'>
+                <h4>C.P.S. - Line Producer</h4>
+                <p>June 14, 2016 - June 18, 2016</p>
+                <p class='text'>It was my responsibility to help the Director who was also the Producer in making plans for catering as well as make sure everything went smoothly on set.</p>
+            </div>
+        </div>
+        <div class='text-container'>
+            <div class='littleBox'>
+                <h4>Genon Murray Workshop - Camera Operator</h4>
+                <p>July 7, 2016</p>
+                <p class='text'>As one of the Camera Operators for this workshop, it was my responsibility to set up the cameras and making sure the they had the proper k settings uploaded before filming. I was also in charge charge of making sure that the talent on camera had enough head room, they were in focus, and centered in frame.</p>
+            </div>
+        </div>
+        <div class='text-container'>
+            <div class='littleBox'>
+                <h4>Off the Record - 2nd A.C.</h4>
+                <p>August 8, 2016 - August 11, 2016</p>
+                <p class='text'>As the 2nd A.C., it was my responsibility to make sure the slate is in front of the camera as soon as the camera is recording, make sure the extra batteries are charging, and making sure the camera reports are filled out correctly and in order. If the Director of Photography wanted a lens change, then I would go and get the right lens.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="images">
+            <h4>My Projects</h4>
+        </div>
+            <p class='explain'>Here are some of the projects that I have currently made.</p>
+        <div class='gallery'>
+            <div class='polaroid'>
+                  <img src="https://i.picsum.photos/id/1018/500/400.jpg" alt="">
+              <div class='container'>
+                  <p>Project 1</p>
+              </div>
+            </div>
+            <div class='polaroid'>
+                  <img src="https://i.picsum.photos/id/1018/500/400.jpg" alt="">
+              <div class='container'>
+                  <p>Project 2</p>
+              </div>
+            </div>
+            <div class='polaroid'>
+                  <img src="https://i.picsum.photos/id/1018/500/400.jpg" alt="">
+              <div class='container'>
+                  <p>Project 3</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="quote">
+      <div class='left'>
+        <div class='text'>
+        <!-- <p>“If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.”</p>
+        <p class='justify-left'>- James Cameron</p> -->
+        <p>“I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.”</p>
+        <p class='justify-left'>- Albert Einstein</p>
+        </div>
+      </div>
+      <div class='right'>
+        <img src="https://picsum.photos/seed/picsum/536/354" alt="">
+      </div>
+    </section>
+    <section id="contact">
+        <form class='form' action="/action_page.php">
+          <div class='messageBox' id='name'>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder='Name'><br>
+          </div>
+          <div class='messageBox' id='email'>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" placeholder='Email'><br>
+          </div>
+          <div class='messageBox' id='subject'>
+            <label for="subject">Subject</label><br>
+            <input type="text" id="subject" placeholder='Subject'><br>
+          </div>
+          <div class='messageBox' id=message>
+            <label for="message">Message</label><br>
+            <input type="text" id="message" placeholder='Message'><br><br>
+          </div>
+            <input class='button' type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+  </div>
 </body>
 </html>
