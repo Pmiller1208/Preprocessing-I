@@ -178,21 +178,21 @@ p {
 .container .header nav {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .container .header nav a {
   text-decoration: none;
   color: white;
   font-size: 2rem;
   font-family: 'Anton', sans-serif;
-  padding: 1%;
+  padding: 1% 2%;
 }
 .container .header nav a:hover {
   color: dodgerblue;
-  background: #7c7c7c;
+  background: #5e5e5e;
 }
 .container .header #social {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: flex-end;
   justify-content: space-between;
@@ -206,11 +206,11 @@ p {
 .container .header #social a {
   color: white;
   padding: 20px;
-  width: 8%;
+  width: 10%;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .container .header #social .fa-facebook {
   background: #3B5998;
@@ -284,11 +284,11 @@ p {
   font-size: 1.8rem;
 }
 .container #experience .exp-image {
+  background-image: url("https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80");
   position: relative;
   text-align: center;
   color: white;
-  background-image: url("https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80");
-  min-height: 600px;
+  min-height: 550px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -321,4 +321,81 @@ p {
 }
 .container #experience .text-container p {
   font-size: 1.8rem;
+}
+.container #portfolio {
+  background: dodgerblue;
+}
+.container #portfolio p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3%;
+  text-align: center;
+  font-size: 2.4rem;
+}
+.container #portfolio .images {
+  background-image: url("https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80");
+  position: relative;
+  text-align: center;
+  color: white;
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container #portfolio .images h4 {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  border: 2px solid white;
+}
+.container #portfolio .gallery {
+  width: 80%;
+  margin: 4% auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container #portfolio .gallery .polaroid {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.container #portfolio .explain {
+  color: white;
+}
+.container #quote {
+  background: -webkit-linear-gradient(#ffffff, #0076e1);
+  display: flex;
+}
+.container #quote .left {
+  width: 50%;
+}
+.container #quote .left .text {
+  margin: 5% 5% 5% 20%;
+  padding: 4% auto;
+  background: white;
+  height: 800px;
+  text-align: center;
+}
+.container #quote .left .text p {
+  padding: 5%;
+}
+.container #quote .left .text .justify-left {
+  text-align: end;
+  padding: 2%;
+}
+.container #quote .left p {
+  font-size: 3.2rem;
+}
+.container #quote .right img {
+  width: 100%;
+  height: 100%;
+}
+.container #quote .right {
+  width: 50%;
 }
