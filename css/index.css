@@ -103,7 +103,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid red;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -269,6 +268,7 @@ p {
   padding: 5%;
   background: white;
   width: 50%;
+  border-radius: 30px;
   margin: 10% 0;
   display: flex;
   flex-direction: column;
@@ -282,6 +282,9 @@ p {
 }
 .container #about .text-container .littleBox p {
   font-size: 1.8rem;
+}
+.container #experience {
+  background: #424242;
 }
 .container #experience .exp-image {
   background-image: url("https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80");
@@ -304,14 +307,16 @@ p {
   background: rgba(0, 0, 0, 0.6);
   padding: 2%;
   border: 2px solid white;
+  border-radius: 30px;
 }
 .container #experience .text-container {
-  background: #424242;
   color: white;
+  padding: 2%;
 }
 .container #experience .text-container .littleBox {
   width: 80%;
-  margin: 2% auto;
+  padding: 4% auto;
+  margin: 0 auto;
 }
 .container #experience .text-container .littleBox .text {
   padding: 1% 0;
@@ -353,27 +358,28 @@ p {
   background: rgba(0, 0, 0, 0.6);
   padding: 2%;
   border: 2px solid white;
+  border-radius: 30px;
 }
 .container #portfolio .gallery {
   width: 80%;
-  margin: 4% auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
 .container #portfolio .gallery .polaroid {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+  margin-bottom: 6%;
 }
 .container #portfolio .explain {
   color: white;
 }
 .container #quote {
-  background: -webkit-linear-gradient(#ffffff, #0076e1);
   display: flex;
 }
 .container #quote .left {
   width: 50%;
+  background: -webkit-linear-gradient(#ffffff, #0076e1);
 }
 .container #quote .left .text {
   margin: 5% 5% 5% 20%;
@@ -381,6 +387,7 @@ p {
   background: white;
   height: 800px;
   text-align: center;
+  border-radius: 30px;
 }
 .container #quote .left .text p {
   padding: 5%;
@@ -398,4 +405,57 @@ p {
 }
 .container #quote .right {
   width: 50%;
+}
+.container #contact {
+  background: #424242;
+}
+.container #contact form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2%;
+  width: 60%;
+  margin: 0% auto;
+  display: flex;
+}
+.container #contact form .messageBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.container #contact form .messageBox label {
+  font-family: 'Noto Sans', sans-serif;
+}
+.container #contact form .messageBox input[type=text],
+.container #contact form .messageBox select,
+.container #contact form .messageBox textarea {
+  width: 60%;
+  /* Full width */
+  padding: 1% 0;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 1%;
+  /* Add a top margin */
+  margin-bottom: 2%;
+  /* Bottom margin */
+  resize: vertical;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.container #contact form .messageBox .button {
+  background-color: dodgerblue;
+  font-size: 1.8rem;
+  color: white;
+  padding: 1% 2%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container #contact form .messageBox .button:hover {
+  background: white;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
 }

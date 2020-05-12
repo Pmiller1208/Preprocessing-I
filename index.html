@@ -117,16 +117,24 @@
       </div>
     </section>
     <section id="contact">
-        <form action="/action_page.php">
+        <form class='form' action="/action_page.php">
+          <div class='messageBox' id='name'>
             <label for="name">Name</label><br>
-            <input type="text" id="name"><br>
+            <input type="text" id="name" placeholder='Name'><br>
+          </div>
+          <div class='messageBox' id='email'>
             <label for="email">Email</label><br>
-            <input type="text" id="email"><br>
+            <input type="text" id="email" placeholder='Email'><br>
+          </div>
+          <div class='messageBox' id='subject'>
             <label for="subject">Subject</label><br>
-            <input type="text" id="subject"><br>
+            <input type="text" id="subject" placeholder='Subject'><br>
+          </div>
+          <div class='messageBox' id=message>
             <label for="message">Message</label><br>
-            <input type="text" id="message"><br><br>
-            <input type="submit" value="Submit">
+            <input type="text" id="message" placeholder='Message'><br><br>
+          </div>
+            <input class='button' type="submit" value="Submit">
         </form>
     </section>
     <footer>
