@@ -17,6 +17,12 @@
 	border-radius: 50%;
 	}
 
+.opacity(){
+	background: rgba(0, 0, 0, 0.6);
+	padding: 2%;
+	border: 2px solid white;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -155,7 +161,7 @@ p{
 			width: 50%;
 
 			.text-container {
-				padding: 10%;
+				padding: 10% 10% 10% 20%;
 				display: flex;
 				flex-direction: column;
 
@@ -176,6 +182,7 @@ p{
 					text-transform: capitalize;
 					color: @background;
 					font-weight: bold;
+					padding: 0;
 				}
 			} // .text-container closing bracket
 
@@ -198,46 +205,92 @@ p{
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
+		background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+		background-repeat: no-repeat;
+		background-size: cover;
 
 		.text-container{
-			width: 50%;
-				display: flex;
-				justify-content: flex-end;
-			}
+			width: 80%;
+			margin: 0 auto;
+			display:flex;
+			justify-content: flex-end;
 				
 				.littleBox {
 					padding: 5%;
-					width: 80%;
-					margin: 0 auto;
+					background: white;
+					width: 50%;
+					margin: 10% 0;
 					display:flex;
 					flex-direction: column;
 
 				h3 {
 					color: @background;
 					text-transform: capitalize;
-					font-size: 3.2rem;
+					font-size: 2.8rem;
 					text-align: center;
 					padding: 4% 0;
 				}
 	
 				p {
-					font-size: 2.4rem;
+					font-size: 1.8rem;
 				}
 
 			} // .littleBox closing bracket
-			
-			
 
 		}// .text-container closing bracket
 
 	} //#about closing bracket
 
 	#experience {
-		
-	}
 
+		.exp-image {
+			position: relative;
+  			text-align: center;
+			color: white;
+			background-image: url("https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80");
+  			min-height: 600px;
+  			background-attachment: fixed;
+  			background-position: center;
+ 			background-repeat: no-repeat;
+  			background-size: cover;
+			  
+			
+			h3 {
+			position: absolute;
+			top: 50%;
+			left: 51%;
+			transform: translate(-50%, -50%);
+			font-size: 3.2rem;
+			color: white;
+			.opacity();
+			}
+		} // .exp-img closing bracket
 
-} // closes container
+		.text-container{
+			background: @background;
+			color: white;
+
+			.littleBox {
+				width: 80%;
+				margin: 2% auto;
+
+				.text{
+					padding: 1% 0;
+				}
+			}
+
+			h4 {
+				font-size: 2.4rem;
+			}
+
+			p {
+				font-size: 1.8rem;
+			}
+		}
+
+	} // #experience closing bracket
+
+ } // closes container
 
 
 

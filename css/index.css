@@ -225,7 +225,7 @@ p {
   width: 50%;
 }
 .container #home .left .text-container {
-  padding: 10%;
+  padding: 10% 10% 10% 20%;
   display: flex;
   flex-direction: column;
 }
@@ -242,6 +242,7 @@ p {
   text-transform: capitalize;
   color: #424242;
   font-weight: bold;
+  padding: 0;
 }
 .container #home .right {
   width: 50%;
@@ -251,24 +252,73 @@ p {
   height: 100%;
 }
 .container #about {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container #about .text-container {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
 }
 .container #about .text-container .littleBox {
   padding: 5%;
-  width: 80%;
-  margin: 0 auto;
+  background: white;
+  width: 50%;
+  margin: 10% 0;
   display: flex;
   flex-direction: column;
 }
 .container #about .text-container .littleBox h3 {
   color: #424242;
   text-transform: capitalize;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   text-align: center;
   padding: 4% 0;
 }
 .container #about .text-container .littleBox p {
+  font-size: 1.8rem;
+}
+.container #experience .exp-image {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container #experience .exp-image h3 {
+  position: absolute;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  border: 2px solid white;
+}
+.container #experience .text-container {
+  background: #424242;
+  color: white;
+}
+.container #experience .text-container .littleBox {
+  width: 80%;
+  margin: 2% auto;
+}
+.container #experience .text-container .littleBox .text {
+  padding: 1% 0;
+}
+.container #experience .text-container h4 {
   font-size: 2.4rem;
+}
+.container #experience .text-container p {
+  font-size: 1.8rem;
 }
